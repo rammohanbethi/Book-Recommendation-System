@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>RS</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/default.css') }}">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/fonts.css') }}">
+
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
+				<li><a href="#" accesskey="2" title="">About</a></li>
+				<li><a href="http://www2.informatik.uni-freiburg.de/~cziegler/BX/" target="_blank" rel="noopener noreferrer">Dataset</a></li>
+				<li><a href="#" accesskey="4" title="">Books</a></li>
+				<li><a href="{{url_for('recommend')}}" accesskey="5" title="" target="_blank">Recommendation</a></li>
+			</ul>
+		</div>
+		<div id="logo">
+			<h1><a href="#">Book Recommendation System</a></h1>
+			<span>Recommendation<a href="https://en.wikipedia.org/wiki/Recommender_system" target="_blank" rel="noopener noreferrer">SYSTEM</a></span> </div>
+	</div>
+</div>
+<div id="wrapper1">
+	<div id="welcome" class="container">
+		<div class="title">
+			<h2>Welcome to our Book Recommender</h2>
+			<span class="byline">Content Based Book Recommendation System</span> </div>
+		<div class="content">
+			<p>This is <strong>Book Recommndation system</strong>, Recommendation System (RS) is a kind of model that suggests similar items to a purchaser based on his/her earlier purchases or preferences. Virtually everyone has had an online experience where a website makes personalized recommendations in hopes of future sales or ongoing traffic.</p>
+			<a href="https://easychair.org/publications/preprint/Ks4N" target="_blank" rel="noopener noreferrer" class="button">More</a> </div>
+	</div>
+</div>
+<div id="wrapper3">
+	<div id="portfolio" class="container">
+		<div class="title">
+			<h2>Background</h2>
+			<span class="byline">There are 3 major approaches for recommendation systems</span> </div>
+		<div class="pbox1">
+			<div class="column1">
+				<div class="box"> <span class="icon icon-user"></span>
+					<h3>Collaborative Filtering System</h3>
+					<p>Collaborative filtering is a technique that can filter out items that a user might like on the basis of reactions by similar users.It works by searching a large group of people and finding a smaller set of users with tastes similar to a particular user. It looks at the items they like and combines them to create a ranked list of suggestions.</p>
+				</div>
+			</div>
+			<div class="column2">
+				<div class="box"> <span class="icon icon-book"></span>
+					<h3>Content Based Filtering System</h3>
+					<p>Content-based filtering algorithms are given user preferences for items and recommend similar items based on a domain-specific notion of item content. This approach also extends naturally to cases where item metadata is available (e.g., movie stars, book authors, and music genres).</p>
+				</div>
+			</div>
+			<div class="column3">
+				<div class="box"> <span class="icon icon-cloud"></span>
+					<h3>Hybrid Recommender System</h3>
+					<p>Hybrid recommender system is the one that combines multiplerecommendation techniques together to produce the output. If one compares hybrid recommender systems with collaborative or content-based systems, the recommendation accuracy is usually higher in hybrid systems.</p>
+				</div>
+			</div>
+			<div class="column4">
+				<div class="box"> <span class="icon icon-fire"></span>
+					<h3>Nearest Neighbors</h3>
+					<p>KNN does not make any assumptions on the underlying data distribution but it relies on item feature similarity. When KNN makes inference about a book, KNN will calculate the "distance" between the target book and every other book in its database, then it ranks its distances and returns the top K nearest neighbor book as the most similar book recommendations.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="wrapper2" >
+	<div id="featured" class="container" >
+		<div class="box1" >
+			<h2 ><span class="icon icon-group" ></span>Recommender Systems</h2>
+			<p>Recommender Systems
+When you buy a product online, most websites automatically recommend other products that you may like. Recommender systems look at patterns of activities between different users and different products to produce these recommendations. In this module, we introduce recommender algorithms such as the collaborative filtering algorithm and low-rank matrix factorization.</p>
+		</div>
+		<div class="box2">
+			<h2><span class="icon icon-question-sign"></span>Why do we need recommender systems?</h2>
+			<p>Companies using recommender systems focus on increasing sales as a result of very personalized offers and an enhanced customer experience. Recommendations typically speed up searches and make it easier for users to access content they’re interested in, and surprise them with offers they would have never searched for.</p>
+		</div>
+	</div>
+</div>
+<div id="copyright">
+	<div class="title">
+		<h2>Get in touch</h2>
+		<span class="byline"></span> </div>
+	<ul class="contact">
+		<li><a href="https://github.com/rammohanbethi" target="_blank" rel="noopener noreferrer" class="icon icon-github"><span>GitHub</span></a></li>
+		<li><a href="https://www.linkedin.com/in/rammohan-bethi-9160/" target="_blank" rel="noopener noreferrer" class="icon icon-linkedin"><span>LinkedIn</span></a></li>
+
+	</ul>
+	
+</div>
+</body>
+</html>
